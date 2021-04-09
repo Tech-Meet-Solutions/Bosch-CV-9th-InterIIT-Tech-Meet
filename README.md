@@ -86,7 +86,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://homepages.iitb.ac.in/~pranav.deo/"><img src="https://avatars.githubusercontent.com/u/35232938?v=4?s=100" width="100px;" alt=""/><br /><sub><b>pro2812</b></sub></a><br /><a href="#projectManagement-pranav2812" title="Project Management">📆</a></td>
+    <td align="center"><a href="http://homepages.iitb.ac.in/~pranav.deo/"><img src="https://avatars.githubusercontent.com/u/35232938?v=4?s=100" width="100px;" alt=""/><br /><sub><b>pro2812</b></sub></a><br /><a href="#projectManagement-pranav2812" title="Project Management">📆</a> <a href="#ideas-pranav2812" title="Ideas, Planning, & Feedback">🤔</a> <a href="#content-pranav2812" title="Content">🖋</a> <a href="#design-pranav2812" title="Design">🎨</a></td>
   </tr>
 </table>
 
