@@ -17,8 +17,9 @@
 ## The Team
 [![Team pic](team.jpg)]
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
+# Running the code:
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
 ## Read the flow of code [here](./FlowReadme.txt)
 
