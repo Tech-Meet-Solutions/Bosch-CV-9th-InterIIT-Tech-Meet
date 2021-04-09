@@ -11,6 +11,8 @@ effective. But to reach this ambitious goal, which aims to change the very found
 
 In this task, we had to create a web app for training, visualizing and evaluating any neural network. This model is scalable, user-friendly and tranparent in it's funcitoning.
 
+You can see the whole Problem statement [here](./TrafficSignRecognition.pdf)
+
 ### The contingent won Bronze Medal :3rd_place_medal: in the Bosch Traffic Sign Recognition Problem Statement in Inter IIT Tech Meet 9.0 while IIT Bombay won Silver Medal :2nd_place_medal: in the Tech Meet overall.
 
 ## View the presentation here:
