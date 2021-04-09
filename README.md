@@ -15,7 +15,7 @@
 [![9th InterIIT Bosch Traffic Sign recognition, IIT Bombay](thumb.png)](https://www.youtube.com/watch?v=0AiCw3MFePM "9th InterIIT Bosch Traffic Sign recognition, IIT Bombay")
 
 ## The Team
-[All Contributors](team.jpg)]
+[![Team pic](team.jpg)]
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
