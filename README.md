@@ -1,6 +1,6 @@
 # TrafficSignRecognition
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <img src="https://img.shields.io/badge/Maintained-No-red.svg?style=flat" style="float: left;margin-right: 10px;"  hspace="20" alt="Not maintained"><img src="https://img.shields.io/github/license/pranav2812/9th-inter-iit-traffic-sign?style=flat" style="float: left;margin-right: 10px;" hspace="20" alt="Apache License v2.0
@@ -96,6 +96,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="http://homepages.iitb.ac.in/~nihalbarde/"><img src="https://avatars.githubusercontent.com/u/34839591?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nihal Barde</b></sub></a><br /><a href="https://github.com/pranav2812/9th-inter-iit-traffic-sign/commits?author=nilbarde" title="Code">💻</a> <a href="#mentoring-nilbarde" title="Mentoring">🧑‍🏫</a></td>
+    <td align="center"><a href="https://thesmilingsky.github.io/"><img src="https://avatars.githubusercontent.com/u/42549409?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Gagan Jain</b></sub></a><br /><a href="https://github.com/pranav2812/9th-inter-iit-traffic-sign/commits?author=TheSmilingSky" title="Code">💻</a> <a href="#ideas-TheSmilingSky" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
