@@ -5,8 +5,13 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+### Introduction:
+With the advancements in AI and the development of computing capabilities in the 21st century, millions of processes around the globe are being automated like never before. The automobile industry is transforming, and the day isn't far when fully autonomous vehicles would make transportation extremely inexpensive and
+effective. But to reach this ambitious goal, which aims to change the very foundations of transportation as an industry, we need to first solve a few challenging problems which will help a vehicle make decisions by itself. Problem of Traffic Sign Recognition is one such problem and solving it would take us one step closer to L5 autonomy.
 
-### The contingent won Bronze Medal :3rd_place_medal: in the Bosch Traffic Sign Recognition Problem Statement in Inter IIT Tech Meet 9.0.
+In this task, we had to create a web app for training, visualizing and evaluating any neural network. This model is scalable, user-friendly and tranparent in it's funcitoning.
+
+### The contingent won Bronze Medal :3rd_place_medal: in the Bosch Traffic Sign Recognition Problem Statement in Inter IIT Tech Meet 9.0 while IIT Bombay won Silver Medal :2nd_place_medal: in the Tech Meet overall.
 
 ## View the presentation here:
 [PDF Presentation](./H1_BSC_9_Presentation_final.pdf)
