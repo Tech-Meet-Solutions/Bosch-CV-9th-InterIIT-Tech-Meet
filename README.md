@@ -1,10 +1,13 @@
 # TrafficSignRecognition
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-) <img src="https://img.shields.io/badge/Maintained-No-red.svg?style=flat" style="float: left;margin-right: 10px;"  hspace="20" alt="Not maintained"><img src="https://img.shields.io/github/license/pranav2812/9th-inter-iit-traffic-sign?style=flat" style="float: left;margin-right: 10px;" hspace="20" alt="Apache License v2.0
+">
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-<img src="https://img.shields.io/badge/Maintained-No-red.svg?style=flat" style="float: left;margin-right: 10px;"  hspace="20" alt="Not maintained"><img src="https://img.shields.io/github/license/pranav2812/9th-inter-iit-traffic-sign?style=flat" style="float: left;margin-right: 10px;" hspace="20" alt="Apache License v2.0
-">
+
+### The contingent won Bronze Medal in the Bosch Traffic Sign Recognition Problem Statement in Inter IIT Tech Meet 9.0.
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
@@ -106,3 +109,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+Special thanks to Anirudh Mittal, General Secretary - Technical Affairs, IIT Bombay (2020-21), and Aryan Agal and Manthan Dhisale as the Contingent Leaders of the IIT Bombay Contingent, Bombay76, for the 9th Inter-IIT Tech Meet.
