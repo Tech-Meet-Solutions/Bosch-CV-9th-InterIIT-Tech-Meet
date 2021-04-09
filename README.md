@@ -1,8 +1,7 @@
 # TrafficSignRecognition
 
-<img src="https://img.shields.io/badge/Maintained-No-red.svg?style=flat" alt="Not maintained">
-
-<img src="https://img.shields.io/github/license/mashape/apistatus.svg?style=flat" alt="MIT license">
+<img src="https://img.shields.io/badge/Maintained-No-red.svg?style=flat" alt="Not maintained"><img src="https://img.shields.io/github/license/pranav2812/9th-inter-iit-traffic-sign?style=flat" alt="Apache License v2.0
+">
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
