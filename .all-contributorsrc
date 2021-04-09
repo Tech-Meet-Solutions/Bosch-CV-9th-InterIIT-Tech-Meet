@@ -72,6 +72,16 @@
         "code",
         "data"
       ]
+    },
+    {
+      "login": "nilbarde",
+      "name": "Nihal Barde",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34839591?v=4",
+      "profile": "http://homepages.iitb.ac.in/~nihalbarde/",
+      "contributions": [
+        "code",
+        "mentoring"
+      ]
     }
   ],
   "contributorsPerLine": 7,
