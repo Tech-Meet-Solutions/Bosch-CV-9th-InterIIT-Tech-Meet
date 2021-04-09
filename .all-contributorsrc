@@ -52,6 +52,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "omkarghugarkar007",
+      "name": "Omkar Ghugarkar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62425457?v=4",
+      "profile": "http://omkarghugarkar.me",
+      "contributions": [
+        "code",
+        "data"
+      ]
     }
   ],
   "contributorsPerLine": 7,
