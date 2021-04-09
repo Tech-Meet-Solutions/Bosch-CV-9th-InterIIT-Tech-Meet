@@ -1,0 +1,48 @@
+<ngx-spinner></ngx-spinner>
+
+<!-- <div class="button-container" style="justify-content: center;">
+    <button (click)="startEvaluate()" class="xl-button">Evaluate</button>
+</div> -->
+<div class="container">
+    <div class="left-col">
+        <div class="emb-image">
+            <carousel *ngIf="result"
+             [autoplay]="false" 
+             [cellsToShow]="1"
+             [arrowsTheme]="'dark'"
+             [counter]="true"
+             style="height: 100%;width: 100%;"
+             >
+                <div *ngFor="let s of result.embd_imgs.slice(0,5)" class="carousel-cell">
+                    <img src="{{s}}">
+                </div>
+            </carousel>
+        </div>
+    </div>
+    <div class="right-col">
+        <div class="legend-box">
+            <div class="heading" style="text-align: center;">
+                Legend
+            </div>
+            <!-- Legends come here -->
+            <img style="max-width: 10vh;max-height: 70vh; margin-top: 2vh; margin-left: 6vw" *ngIf="result" src="{{result.embd_imgs[result.embd_imgs.length-1]}}">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="small-container" style="background: rgba(253,40,0,1);
+    background: linear-gradient(0deg, rgba(253,40,0,1) 0%, rgba(46,233,29,1) 100%);">
+        <div class="text d-flex" *ngFor="let xx of ['class0_name','class1_name','class2_name','class3_name','class4_name','class5_name','class6_name','class7_name','class8_name','class9_name']" style="width: 100%;justify-content: space-around; padding: 2%;">
+            <div *ngIf="result">{{result.best_worst[xx]}}</div>
+        </div>
+    </div>
+    <div class="emb-container" style="background: rgba(253,40,0,1);
+    background: linear-gradient(0deg, rgba(253,40,0,1) 0%, rgba(46,233,29,1) 100%);">
+        <div *ngFor="let xx of ['class0','class1','class2','class3','class4','class5','class6','class7','class8','class9']" class="d-flex" style="width: 100%;justify-content: space-around; padding: 2%;">
+            <!-- <div *ngIf="result">{{result.best_worst['class'+xx+'name']}}</div> -->
+            <div *ngFor="let yy of [0,1,2,3,4]" class="new-gallery-image m-4">
+                <img *ngIf="result" src="{{result.best_worst[xx][yy]}}">
+            </div>
+        </div>
+    </div>
+</div>

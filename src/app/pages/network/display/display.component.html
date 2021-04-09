@@ -1,0 +1,64 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8 left-col" >
+        <div class="network-img">
+            <img [src]="networkData.net_img" style="max-width: 100%; max-height: 40vw;">
+        </div>
+        <div class="content-container">
+            <div class="content-card hyper-col">
+                <mat-card-title>Hyperparameters</mat-card-title>
+                <mat-card-content>
+                    <mat-card class="hyper">
+                        <b>Learning Rate</b>:  {{networkData.learning_rate}}
+                    </mat-card>
+                    <mat-card class="hyper">
+                        <b>Decay Rate</b>:  {{networkData.decay_rate}}
+                    </mat-card>
+                </mat-card-content>
+            </div>
+            <div  class="content-card loss-col">
+                <mat-card-title>Loss and Optimizer</mat-card-title>
+                <mat-card-content>
+                    <mat-card class="loss">
+                        <b>Loss</b> : {{networkData.loss}}
+                    </mat-card>
+                    <mat-card class="loss">
+                        <b>Optimizer</b> :{{networkData.optimizer}}
+                    </mat-card>
+                </mat-card-content>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 right-col">
+       <!-- <app-carousel [images]="[{b64 : 'assets/images/download.jpeg'}, {b64 : 'assets/images/download.jpeg'}, {b64 : 'assets/images/download.jpeg'}]"></app-carousel> -->
+       <div class="layer">
+        <div class="layer-img">
+             <img [src]="networkData.layers[currLayer][0]" style="max-width: 100%;">
+         </div>
+         <mat-card-title>Layer {{currLayer + 1}}</mat-card-title>
+         <!-- <div class="layer-result">
+              <img src="../../../../assets/images/download.jpeg">
+          </div> -->
+          <div class="layer-info">
+            <mat-card class="info">
+                <b>Type</b>:  {{networkData.layers[currLayer][1][0]}}
+            </mat-card>
+            <mat-card class="info">
+                <b>Dimensions</b>:   {{networkData.layers[currLayer][1][1]}}
+            </mat-card>
+            <!-- <mat-card class="info">
+                <b>Third</b>:   {{networkData.layers[currLayer][1][2]}}
+            </mat-card> -->
+           </div>
+       </div>
+       <div class="button-container">
+        <div class="left">
+            <mat-icon class="blue-arrow" style="margin-top: 5.5%; cursor: pointer;" (click)="change_layer(-1)">arrow_backward</mat-icon>
+        </div>
+        <div class="right" style="margin-left: 80%;">
+            <mat-icon class="blue-arrow" style="margin-top: 5.5%; cursor: pointer;" (click)="change_layer(1)">arrow_forward</mat-icon>
+        </div>
+       </div>
+    </div>
+  </div>
+</div>

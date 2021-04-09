@@ -1,0 +1,30 @@
+$image_height: 100px;
+.slider-image{
+    width: 100%;
+    height:$image_height;
+    object-fit: contain;
+    border: 2px solid red;
+    position: relative;
+}
+
+.swiper-container-bottom{
+    height:$image_height+50px;
+}
+
+.fade{
+    opacity: 0.7;
+}
+
+.selected-circle{
+    position: absolute;
+    top:5%;
+    left: 5%;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: blue;
+}
+
+.bottom-carousel-container{
+    border: 2px solid black;
+}

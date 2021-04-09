@@ -1,0 +1,19 @@
+
+<div class="row">
+    <div class="col-12 col-lg-12 padder">
+        <div class="container top-carousel-container">
+            <div class="swiper-container swiper-container-top">
+                <div class="swiper-wrapper">
+                  <div *ngFor="let image of images" class="swiper-slide">
+                      <img src="{{image.b64}}" class="top-carousel-image">
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-top"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-next-top"></div>
+                <div class="swiper-button-prev swiper-button-prev-top"></div>
+            </div>
+        </div>
+    </div>
+</div>

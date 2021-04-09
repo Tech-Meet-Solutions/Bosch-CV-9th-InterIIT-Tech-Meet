@@ -1,0 +1,39 @@
+<!-- <div class="container">
+    <mat-card *ngFor='let data of classData' class="mat-elevation-z5">
+        <div class="images">
+            <div class="left">
+                <img src="../../../assets/images/sample.png">
+            </div>
+            <div class="right">
+                <div class="upper">
+                    <img src="../../../assets/images/sample.png">
+                    <img src="../../../assets/images/sample.png">
+                </div>
+                <div class="lower">
+                    <img src="../../../assets/images/sample.png">
+                </div>
+            </div>
+        </div>
+        <mat-card-title>{{data.name}}</mat-card-title>
+        Total Images: {{data.count}}
+    </mat-card>
+</div> -->
+
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center justify-space-around">
+        <div class="new-gallery-image m-4" *ngFor="let obj of classData">
+            <img [src]="obj.pics[0]">
+            <p class="title">{{obj.class_name}}</p>
+            <p class="subtitle">{{obj.num_imgs}} Images</p>
+            <div class="arrow-div" (click)="openDialog(obj)">
+                <span class="material-icons">
+                    arrow_forward
+                </span>
+            </div>
+            <div class="dots-div">
+                <div>...</div>
+            </div>
+        </div>
+    </div>
+
+</div>

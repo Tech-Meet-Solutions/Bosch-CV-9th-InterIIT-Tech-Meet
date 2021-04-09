@@ -1,0 +1,22 @@
+<mat-sidenav-container>
+    <mat-sidenav [fixedInViewport]="true" (mouseenter)="appDrawer.open()" (mouseleave)="appDrawer.close()" #appDrawer mode="rail" opened="false" class="sidebar">
+        <mat-nav-list class="dashboard">
+          <!-- <a mat-list-item [routerLink]="'/pages/home'">
+            <mat-icon mat-list-icon svgIcon="my_logo"></mat-icon>
+            <p class="link-text" matLine>Logo</p>
+          </a> -->
+    
+          <a mat-list-item *ngFor="let link of links" [routerLink]="link.link" routerLinkActive #rla="routerLinkActive">
+            <mat-icon mat-list-icon [class.link-icon]="rla.isActive" svgIcon="{{link.icon}}"></mat-icon>
+            <p matLine [class.active-link-text]="rla.isActive" [class.link-text]="!rla.isActive">{{link.name}}</p>
+          </a>
+        </mat-nav-list>
+      </mat-sidenav>
+
+<!-- <mat-sidenav-content style="overflow-x: hidden;"> -->
+    <div class="screen" style="min-height: 100vh; background-color: #181D23;">
+        <router-outlet></router-outlet>
+    </div>
+<!-- </mat-sidenav-content> -->
+
+</mat-sidenav-container>

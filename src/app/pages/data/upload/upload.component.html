@@ -1,0 +1,34 @@
+<div class="container mt-5">
+    <ngx-dropzone #drop (change)="onSelect($event)" >
+        <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f" [removable]="true" (removed)="onRemove(f)">
+        </ngx-dropzone-image-preview>  
+    </ngx-dropzone>  
+</div>
+<div *ngIf="uploading" class="upload-cards-div-wrapper">
+    <div class="upload-cards-div">
+        <div class="image-upload-card d-inline-block ml-2 mr-2" *ngFor="let image of filesCopy; let i = index">
+            <div class="row" style="padding-left: 32px; padding-top: 12px; color: white;">
+                <div class="col-10">
+                    <span> {{image.name}} </span> <br>
+                    <span>{{floor(image.size/1024)}} Kb</span>
+                </div>
+                <div class="col-2 loader-div">
+                    <div *ngIf="!imageUploaded[i]" class="loader"></div>
+                    <div *ngIf="imageUploaded[i]" class="check"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="d-flex mt-4 upload-wrapper-div">
+    <div style="width: 250px;">
+        <app-custom-dropdown [label]="'Choose Label'" [labels]="labels" [newField]="true" (currentLabel)="selectLabel($event)" (add)="newLabel(false,$event)"></app-custom-dropdown>
+    </div>
+    <div *ngIf="!uploading" class="m-5 mb-0 d-flex justify-content-center">
+        <button [disabled]="files.length === 0" class="btn btn-upload" (click)="submit()">Upload</button>
+    </div>
+</div>
+
+<app-gallery></app-gallery>

@@ -1,0 +1,95 @@
+<div *ngIf="inputs" class="container-fluid" style="height: 100%;">
+    <!-- <div class="row d-flex justify-content-center">
+        <div class="network-input input-box">
+                <mat-label class="my-label">Choose network</mat-label>
+                <mat-select [(ngModel)]="inputs.network" class="my-dropdown" (selectionChange)="save()">
+                    <mat-option *ngFor="let option of networkInputs" [value]="option.value">{{option.name}}</mat-option>
+                </mat-select>
+        </div>
+    </div> -->
+    <div class="row" style="height: 50%; padding-top: 5%;">
+        <div class="col-lg-3" style="padding: 2%;">
+            <div class="heading">
+                Hyperparameters
+            </div>
+            <div class="input-box hyp-input" *ngFor="let param of leftHyperparamInputs">
+                <mat-label class="my-label">{{param.name}}</mat-label>
+                <input matInput class="my-text-input" type="number" [min]="param.min" [max]="param.max" [placeholder]="param.placeholder" [(ngModel)]="inputs[param.property]">
+                <button mat-icon-button (click)="save()"><mat-icon class="blue-arrow">arrow_forward</mat-icon></button>
+            </div>
+        </div>
+        <div class="col-lg-3" style="padding: 2%; padding-top: 5%;">
+            <div class="input-box" style="padding-top: 4%; margin-top: 10px;">
+                <div class="my-label" style="width: 60%;">Enter number of layers to freeze from top?</div>
+                <div class="d-flex justify-content-center">
+                    <input matInput class="my-text-input" style="margin-left: 30%;" type="number"  [(ngModel)]="inputs.layers_to_freeze">
+                    <mat-icon class="blue-arrow" style="margin-top: 5.5%; cursor: pointer;" (click)="save()">arrow_forward</mat-icon>
+                </div>
+            </div>
+            <div class="input-box" style="padding-top: 4%; margin-top: 20%;">
+                <div class="my-label" style="width: 60%;">Dropouts</div>
+                <div class="d-flex justify-content-center">
+                    <input matInput class="my-text-input" style="margin-left: 30%;" type="number"  [(ngModel)]="inputs.dropout_prob">
+                    <mat-icon class="blue-arrow" style="margin-top: 5.5%; cursor: pointer;" (click)="save()">arrow_forward</mat-icon> 
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3" style="padding: 3%;">
+            <div class="heading">
+                Settings
+            </div>
+            <div class="hyp-input input-box" *ngFor="let param of lossInputs">
+                <mat-label class="my-label">{{param.name}}</mat-label>
+                <mat-select [(ngModel)]="inputs[param.property]" class="my-dropdown" style="margin: 4%;" (selectionChange)="save()">
+                    <mat-option *ngFor="let option of param.options" [value]="option.value">{{option.name}}</mat-option>
+                </mat-select>
+            </div>
+        </div>
+        <div class="col-lg-3" style="padding: 2%;">
+            <div class="heading">
+                Training trainforms
+            </div>
+            <div class="input-box hyp-input" *ngFor="let param of rightHyperparamInputs">
+                <mat-label class="my-label">{{param.name}}</mat-label>
+                <input matInput class="my-text-input" type="number" [min]="param.min" [max]="param.max" [placeholder]="param.placeholder" [(ngModel)]="inputs[param.property]">
+                <button mat-icon-button (click)="save()"><mat-icon class="blue-arrow">arrow_forward</mat-icon></button>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="row d-flex justify-content-center" >
+        <img src="assets/images/download.jpeg" class="network-image">
+    </div> -->
+    <!-- <div class="row">
+        <div class="col-md-2 modify-container">
+            <h1 class="text-center">Modify network</h1>
+            <ng-container *ngFor="let param of hyperparamInputs">
+                <mat-form-field appearance="fill"class="ml-2">
+                    <mat-label>{{param.name}}</mat-label>
+                    <mat-select *ngIf="param.type == 'dropdown'" [(ngModel)]="inputs[param.property]">
+                        <mat-option *ngFor="let option of param.options" [value]="option.value">{{option.name}}</mat-option>
+                    </mat-select>
+                    <input matInput type="number" [min]="param.min" [max]="param.max" *ngIf="param.type== 'range'" [placeholder]="param.placeholder" [(ngModel)]="inputs[param.property]">
+                </mat-form-field>
+            </ng-container> 
+            <mat-form-field appearance="fill" class="ml-2">
+                <mat-label>Frozen layers</mat-label>
+                <input matInput type="number" min="0" placeholder="Enter number of frozen layers" [(ngModel)]="inputs.freeze">
+                <mat-error>
+                    Yes
+                </mat-error>
+            </mat-form-field> 
+            <mat-form-field appearance="fill" class="ml-2">
+                <mat-label>Dropout</mat-label>
+                <input matInput placeholder="Enter dropout layers Ex. 1,2,4,6" [(ngModel)]="inputs.dropout">
+            </mat-form-field>
+            <div class="d-flex justify-content-center" style="margin-bottom: 1%;">
+            <button mat-flat-button color="primary" (click)="save()">Save changes</button>  
+            </div>   
+        </div>
+        <div class="col-md-10">
+            <div class="d-flex justify-content-center" style="height : 70vh;align-items: center;">
+                <img src="assets/images/download.jpeg">
+            </div>
+        </div>
+    </div> -->
+</div>

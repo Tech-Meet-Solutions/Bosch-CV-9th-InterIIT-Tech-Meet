@@ -1,0 +1,79 @@
+<div class="container">
+    <div class="image-container">
+        <div class="heading">Images</div>
+        <div class="carousel-container">
+            <!-- <div class="left-button"><button (click)="move('left')">Click here</button></div> -->
+            <mat-icon class="blue-arrow" style="margin-top: 5.5%; cursor: pointer;" (click)="move('left')">arrow_backward</mat-icon>
+            <div class="view-area">
+                <div *ngIf="suggestion" class="carousel" #carousel>
+                    <div *ngFor="let i of suggestion.gradcam" class="new-gallery-image m-4">
+                        <img src="{{i}}">
+                        <p class="subtitle">Gradcam</p>
+                        <div class="arrow-div">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div *ngFor="let i of suggestion.lime" class="new-gallery-image m-4">
+                        <img src="{{i}}">
+                        <p class="subtitle">Lime</p>
+                        <div class="arrow-div">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="right-button"><button (click)="move('right')">Click here</button></div> -->
+            <mat-icon class="blue-arrow" style="margin-top: 5.5%; cursor: pointer;" (click)="move('right')">arrow_forward</mat-icon>
+        </div>
+    </div>
+    <div class="text-container">
+        <div class="suggestions-container">
+            <div class="heading">Suggestions</div> 
+            <div *ngIf="suggestion" [innerHTML]="suggestion.suggestions" class="text">
+            </div>
+        </div>
+        <div class="suggestions-container">
+            <div class="heading">Explanations</div> 
+            <div *ngIf="suggestion" [innerHTML]="suggestion.explainations" class="text">
+            </div>
+        </div>
+    </div>
+    <table *ngIf="dataSource" mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+      
+        <!-- Position Column -->
+        <ng-container matColumnDef="class_name">
+          <th mat-header-cell *matHeaderCellDef> Class Name </th>
+          <td mat-cell *matCellDef="let element"> {{element.class_name}} </td>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <ng-container matColumnDef="precision">
+          <th mat-header-cell *matHeaderCellDef> Precision </th>
+          <td mat-cell *matCellDef="let element"> {{element.precision | number : '1.3-3'}} </td>
+        </ng-container>
+      
+        <!-- Weight Column -->
+        <ng-container matColumnDef="recall">
+          <th mat-header-cell *matHeaderCellDef> Recall </th>
+          <td mat-cell *matCellDef="let element"> {{element.recall | number : '1.3-3'}} </td>
+        </ng-container>
+      
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="f1">
+          <th mat-header-cell *matHeaderCellDef> F1 </th>
+          <td mat-cell *matCellDef="let element"> {{element.f1 | number : '1.3-3'}} </td>
+        </ng-container>
+      
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="accuracy">
+          <th mat-header-cell *matHeaderCellDef> Accuracy </th>
+          <td mat-cell *matCellDef="let element"> {{element.accuracy | number : '1.3-3'}} </td>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+</div>

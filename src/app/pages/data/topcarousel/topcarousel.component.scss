@@ -1,0 +1,20 @@
+$image_height : 400px;
+
+.top-carousel-image{
+    max-width: 100%;
+    height: $image_height;
+    object-fit: contain;
+}
+
+.swiper-container-top{
+    height: $image_height+50px;
+}
+
+.top-carousel-container{
+    border: 2px solid black;
+}
+
+.padder{
+    padding: 10px 10px 10px 10px;
+    margin: auto;
+}

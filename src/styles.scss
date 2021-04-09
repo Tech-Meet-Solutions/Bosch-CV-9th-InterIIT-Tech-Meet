@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'styles/bootstrap-4.6.0-dist/css/bootstrap.min.css';
+@import 'assets/crop-select-js/crop-select-js.min.css';
+
+html, body { height: 100%; width: 100%; }
+body { 
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.topbar{
+    background: #455060 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #272D3B33;
+opacity: 1;
+    a {
+        color: white;
+        font-weight: bold;
+        opacity: 1;
+    }
+}
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: #0088FF;
+    height: 3px;
+    border-radius: 1px;
+}
+
+body{
+    font-family: Montserrat !important;
+}
+.dialog-dark-background .mat-dialog-container{
+    background-color:   #757b85   
+}
+
+mat-dialog-container{
+    background-color:   #181D23    !important
+}
+
+.backdropBackground{
+    background-color: white;
+    filter: blur(26px);
+}

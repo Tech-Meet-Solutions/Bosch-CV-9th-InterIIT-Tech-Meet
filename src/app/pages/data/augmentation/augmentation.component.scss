@@ -1,0 +1,22 @@
+.controls-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .controls-container{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow-y: scroll;
+    height: 93vh;
+    background-color: #181D23;
+  }
+
+  .carousel-container::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel-container{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow-y: scroll;
+    height: 93vh;
+  }

@@ -1,0 +1,39 @@
+<div class="container-fluid m-4 gallery-header">
+    <div class="p-div"><p>Gallery</p></div>
+    <div class="flex-row alternate-theme">
+        <mat-checkbox #transformedCheck class="example-margin " color="primary" (change)="filterTransformed(transformedCheck.checked)" style="color: white;"> Transformed only</mat-checkbox>
+        <div style="width: 200px;">
+            <app-custom-dropdown [label]="'Date Filter'" [labels]="['Last Hour', 'Last Day', 'All']" (currentLabel)="filterTime($event)"></app-custom-dropdown>
+        </div>
+        <div class="input-div">
+            <img (click)="filterImages(search.value)" src="assets/icons/magnifying-glass.svg">
+            <input #search type="text" placeholder="Search">
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center justify-space-around">
+        <ng-container *ngFor="let image of images">
+            <div [class.selectedImage]="selectedImages[image.id]" class="new-gallery-image m-4">
+                <img id="{{image.id}}" (click)="select($event)" src="{{image.b64}}">
+                <div class="text-div">
+                    <p class="title">Image No: {{image.id}}</p>
+                    <p class="subtitle">{{image.image_class}}</p>
+                </div>
+                <div (click)="openCrop(image)" class="arrow-div">
+                    <div><mat-icon class="crop-icon">crop</mat-icon></div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+
+
+    <div class="footer">
+            <p (click)="sendSelectedImages()">Edit {{numTrue()!=0 ? numTrue()  : ''}}</p>
+            <p (click)="selectAll()">Select All</p>
+            <div class="garbage" (click)="deleteSelectedImages()"><img  src="assets/icons/garbage.svg"></div>    
+    </div>
+
+    
+</div>
+

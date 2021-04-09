@@ -1,0 +1,299 @@
+$light_grey: #29313A;
+$orange: #FF7D56;
+
+.upper-left{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 32px;
+    margin-right: 16px;
+}
+
+.light-grey-container{
+    background-color: $light_grey;
+    border-radius: 20px;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.dataset-val, .smote{
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    padding-left:32px;
+}
+
+input[type="number"]{
+    width: 100px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.split-right-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.orange-container{
+    background-color: $orange;
+    border-radius: 20px;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.plot-card{
+    background-color: $light_grey;
+    border-radius: 20px;
+    color: white;
+    padding: 32px;
+    font-size: 26px;
+    font-weight: bold;
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+}   
+
+.cards-div{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 64px;
+}
+
+.score-div{
+    background-color: $light_grey;
+    height: 90px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+}
+
+.score-text{
+    color: white;
+    font-size: 20px;
+}
+
+.score-val{
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    width: 90px;
+    height: 28px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.upper-container{
+    margin-bottom: 60px;
+}
+
+.train-button{
+    width: 100%;
+    height: 30vh;
+    margin-top: 16px;
+    border-radius: 20px;
+    font-size: 50px;
+    background-color: #FF4F46;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.btn-generate{
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.smote{
+    color: #29313A;
+}
+
+div[role="button"]{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+
+
+
+
+/***** Slider Styles*******/
+$bg_color: #181D23;
+input[type=range] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 225px; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline : none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+input[type=range]::-ms-track {
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+    border-radius: 20px;
+}
+
+/* Special styling for WebKit/Blink */
+$slider_size: 24px;
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+    height: $slider_size;
+    width: $slider_size;
+    border-radius: 100%;
+    background: #0088FF;
+    cursor: pointer;
+    margin-top: -$slider_size + 22px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+  }
+  
+  /* All the same stuff for Firefox */
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  
+  /* All the same stuff for IE */
+  input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 20px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background:$bg_color;
+    border-radius: 20px;
+    border: 0.2px solid #010101;
+  }
+  
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: $bg_color;
+  }
+  
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background:$bg_color;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+  }
+  
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: $bg_color;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: $bg_color;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: $bg_color;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: $bg_color;
+  }
+/**************************/
+
+/*******DATA SPLIT PART*************/
+.arrow-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:focus{
+  outline: none !important;
+  border: none !important;
+  box-shadow: none;
+
+}
+
+.blue-arrow{
+  color:white; 
+  background-color:#0088FF; 
+  border-radius: 50%;
+  margin-right: 5%;
+}
+
+/********Right side of SMOTE*****/
+.smote-right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label-val{
+  width: 50px;
+  outline: none;
+}
+
+
+/**************************/
+
+.autoselect{
+  background-color: green;
+}
+
+.loading{
+  color: white;
+  padding-top: 150px;
+  padding-left: 0;
+  padding-right: 0;
+  min-width: 250px !important;
+  font-size: 12px;
+  text-align: center;
+}

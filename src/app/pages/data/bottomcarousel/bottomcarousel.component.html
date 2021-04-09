@@ -1,0 +1,21 @@
+<!-- Swiper -->
+<div class="row">
+  <div class="col-12">
+      <div class="container-fluid bottom-carousel-container mt-2 p-2">
+        <div class="swiper-container swiper-container-bottom">
+          <div class="swiper-wrapper">
+            <div *ngFor="let image of images" class="swiper-slide">
+                <img [class.fade]="selectedImages[image.id]" id="{{image.id}}" (click)="select($event)" class="slider-image" src="{{image.b64}}">
+                <div [class.selected-circle]="selectedImages[image.id]"></div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination swiper-pagination-bottom"></div>
+
+          <!-- Add Arrows -->
+          <div class="swiper-button-next swiper-button-next-bottom"></div>
+          <div class="swiper-button-prev swiper-button-prev-bottom"></div>
+        </div>
+      </div>
+  </div>
+</div>

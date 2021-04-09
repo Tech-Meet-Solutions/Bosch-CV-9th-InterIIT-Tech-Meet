@@ -1,0 +1,91 @@
+<div class="container-fluid upper-container">
+    <div class="row">
+        <div class="col-12 col-lg-8 upper-left">
+            <div class="row light-grey-container">
+                <div class="col-6 dataset-val">
+                    Train Test Split: 
+                </div>
+                <div class="col-6 split-right-div">
+                    <input #slider type="range" min="0" max="95" step="5" [(ngModel)]="sliderboxval.value">
+                    <input #sliderboxval type="number" min="0" max="95" step="5" [value]="slider.value" [(ngModel)]="slider.value">
+                    <button class="btn arrow-btn" (click)="post('train_test_split.txt', slider.value)">                     
+                        <mat-icon class="blue-arrow">arrow_forward</mat-icon>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row orange-container">
+                <div class="col-6 smote">
+                    SMOTE factor generation
+                </div>
+                <div class="col-6 smote-right">
+                    <div class="my-train-dropdown" style="width: 170px">
+                        <app-custom-dropdown [label]="'Label'" [labels]="labels" (currentLabel)="setCurrentLabel($event)"></app-custom-dropdown>
+                    </div>
+                    <input [disabled]="currentSmoteLabel == null || autogen" (change)="changeParams('another_param.txt', currentSmoteLabel , sliderboxval2.value)" class="label-val" #sliderboxval2 type="text" [value]="currentSmoteLabel == null ? '' : values[currentSmoteLabel]" >
+                    <button (click)="autoGenerate()" [class.autoselect]="autogen" class="btn btn-primary btn-generate"> Auto Generate</button>
+                    <div role="button" class="ml-2" matTooltip="SMOTE is a statistical technique used for increasing the number of samples of the minority classes in a balanced way to counter class imbalace problem
+This approach generates new examples that combine features of the target case with features of its neighbors and makes the samples more general">i</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-3">
+            <img *ngIf="!training" (click)="startTraining()" class="train-button" src="../../../../assets/images/train.png">
+            <div *ngIf="training" style="min-height:200px">
+                <ngx-spinner bdColor="rgba(24, 29, 35, 1)" [fullScreen]="false" type="ball-clip-rotate-multiple" size="medium">
+					<p class="loading">Training... (Do not refresh/change Tab)</p>
+				</ngx-spinner>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="lower-container container-fluid">
+    <div class="row">
+        <div class="col-8 cards-div">
+            <div class="plot-card col-5">
+                <p>Loss Plot</p>
+                <div id="chart">
+                    <apx-chart
+                      [series]="chartOptions.series"
+                      [chart]="chartOptions.chart"
+                      [xaxis]="chartOptions.xaxis"
+                      [yaxis]="chartOptions.yaxis"
+                      [dataLabels]="chartOptions.dataLabels"
+                      [grid]="chartOptions.grid"
+                      [stroke]="chartOptions.stroke"
+                      [title]="chartOptions.title"
+                      [fill]="chartOptions.fill"
+                      [tooltip] = "chartOptions.tooltip"
+                      [colors] = "chartOptions.colors"
+                    ></apx-chart>
+                </div>                  
+            </div>
+            <div class="plot-card col-5">
+                <p>Accuracy Plot</p>
+                <div id="accuracyChart">
+                    <apx-chart
+                      [series]="accuracyChartOptions.series"
+                      [chart]="accuracyChartOptions.chart"
+                      [xaxis]="accuracyChartOptions.xaxis"
+                      [yaxis]="accuracyChartOptions.yaxis"
+                      [dataLabels]="accuracyChartOptions.dataLabels"
+                      [grid]="accuracyChartOptions.grid"
+                      [stroke]="accuracyChartOptions.stroke"
+                      [title]="accuracyChartOptions.title"
+                      [fill]="accuracyChartOptions.fill"
+                      [tooltip] = "accuracyChartOptions.tooltip"
+                      [colors] = "accuracyChartOptions.colors"
+                    ></apx-chart>
+                </div>        
+            </div>
+        </div>
+        <div class="col-4 pr-5">
+            <div class="score-div m-2" *ngFor="let score of scores">
+                <div class="score-text">{{score[0]}}</div>
+                <div class="score-val"> {{score[1]}}</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="container">
+    <div id="chart" style="width: 80%;">
+        <apx-chart #ConfChart
+            [series]="chartOptions.series"
+            [chart]="chartOptions.chart"
+            [dataLabels]="chartOptions.dataLabels"
+            [title]="chartOptions.title"
+            [colors]="chartOptions.colors"
+            [tooltip]="chartOptions.tooltip"
+            [theme]="chartOptions.theme"
+            [yaxis]="chartOptions.yaxis"
+            [xaxis]="chartOptions.xaxis"
+            [markers]="chartOptions.markers"
+            [plotOptions]="chartOptions.plotOptions"
+            [legend]="chartOptions.legend"
+            [noData]="chartOptions.nodata"
+        ></apx-chart>
+    </div>
+</div>
+<div class="container-fluid" style="padding: 2vh;color: white;text-align: center;" *ngIf="!images.hasOwnProperty('imgs')">
+    <h1>No images to show</h1>
+</div>
+<div class="container-fluid">
+<div class="row d-flex" style="justify-content: space-around;" *ngIf="selTrueClass" >
+<div class=" info">
+    <b>True Class</b> : {{selTrueClass}}
+</div>
+<div class="info">
+    <b>Predicted Class</b> : {{selPredClass}}
+</div>
+</div>
+<div class="row d-flex justify-content-center justify-space-around" style="flex-direction: row;">
+    <ng-container *ngFor="let img of images['imgs'];let ind = index">
+        <div [class.selectedImage]="selectedImages[ind]" class="new-gallery-image m-4">
+            <img (click)="select(ind)" [src]="img">
+        </div>
+    </ng-container>
+</div>
+<div class="row d-flex justify-content-center">
+    <button *ngIf="!suggestionsClicked" mat-button class="button-class" (click)="submit()"> Go to suggestions</button>
+    <div *ngIf="suggestionsClicked" class="col-12 col-lg-3">
+    <div  style="min-height:200px">
+                <ngx-spinner bdColor="rgba(24, 29, 35, 1)" [fullScreen]="false" type="ball-clip-rotate-multiple" size="medium">
+                    <p class="loading">Generating suggestions, please wait...</p>
+                </ngx-spinner>
+    </div>
+</div>
+</div>
+</div>
+    <!-- </div>
+</div> -->

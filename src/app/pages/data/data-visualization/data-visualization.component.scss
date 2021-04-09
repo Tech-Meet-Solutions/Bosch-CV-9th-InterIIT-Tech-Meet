@@ -1,0 +1,103 @@
+// .container {
+//     width: 75vw;
+//     left: 12.5vw;
+//     display: flex;
+//     flex-wrap: wrap;
+
+//     mat-card {
+//         width: 20vw;
+//         margin: 1vw;
+
+//         .images {
+//             display: flex;
+
+//             img {
+//                 width: 100%;
+//             }
+//             .left {
+//                 width: 50%;
+//                 height: 10vw;
+//             }
+//             .right {
+//                 width: 40%;
+//                 margin: 0vw 5%;
+
+//                 .upper {
+//                     display: flex;
+//                     height: 50%;
+
+//                     img {
+//                         width: 45%;
+//                         height: inherit;
+//                         margin: 0 2.5%;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.new-gallery-image{
+    height: 300px;
+    border-radius: 20px;
+    background-color: #29313A;   
+    padding: 0;
+    overflow: hidden;
+    width: 15%;
+    position: relative;
+    box-shadow: 4px 4px 6px #00000059;
+    img{
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
+    p{
+        padding-left: 16px;
+    }
+    .title{
+        color: #F5FBFF;
+        font-size: 18px;
+        padding-top: 8px;
+        margin-bottom: 0;
+    }
+    .subtitle{
+        color: #fff;
+        font-size: 14px;
+        padding-top: 0;
+    }
+}
+
+.arrow-div{
+    float: right;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    background-color: #0088FF;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    span{
+        transform: rotate(-45deg);
+    }
+}
+
+.dots-div{
+    float: left;
+    height: 30px;
+    width: 30px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    div{
+        color: white;
+    }
+}
+

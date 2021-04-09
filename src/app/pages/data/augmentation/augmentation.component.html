@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 controls-container">
+      <app-controls (apply)="getTransformed($event)" (save)="save($event)"></app-controls>
+    </div>
+    <div class="col-md-8 carousel-container">
+      <!-- <app-topcarousel [images]="images"></app-topcarousel>
+      <app-bottomcarousel [images]="images" [max_id]="max_id"></app-bottomcarousel> -->
+      <app-carousel [images]="images"></app-carousel>
+    </div>
+    
+  </div>
+</div>
+
+
+
+<!-- <app-carousel></app-carousel> -->

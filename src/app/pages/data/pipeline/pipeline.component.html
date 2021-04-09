@@ -1,0 +1,10 @@
+<div class="text-center">
+    <h1> Pipeline Image</h1>
+</div>
+<div *ngIf="imageSrc" class="d-flex justify-content-center">
+    <img [src]="imageSrc">
+</div>
+
+<ng-container *ngIf="socketmessage">
+       <h1>Socket message is: {{socketmessage}}</h1>  <br> <br> <br>
+</ng-container>

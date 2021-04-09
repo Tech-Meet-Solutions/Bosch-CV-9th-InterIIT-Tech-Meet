@@ -1,0 +1,110 @@
+<div class="container col-sm-12">
+    <h1 class="heading-container">Edit</h1>
+    <div class="container">
+        <div class="display-image-edit">
+            <img src="assets/images/edit.png">
+        </div>
+        <mat-accordion class="example-headers-align" multi>
+            <mat-expansion-panel *ngFor="let type of transformTypes">
+              <mat-expansion-panel-header class="expansion-panel-header" style="background-color: #29313A;">
+                <mat-panel-title>
+                  {{type.name}}
+                </mat-panel-title>
+                <mat-panel-description>
+                  
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <div style="margin-top: 10px;"></div>
+              <div *ngFor="let transform of type.transforms" style="padding-bottom: 10px;">
+                <div class="row alternate-theme" *ngIf="!transform.inputs">
+                    <div>
+                        <mat-label class="h6">{{transform.name}}</mat-label>
+                    </div>  
+                    <div>
+                        <div class="d-flex alternate-theme" *ngIf="transform.type == 'number'" style="align-items: center; justify-content: space-around;">
+                            <mat-slider  color="primary"   thumbLabel
+                    [tickInterval]="transform.step" [min]="transform.min" [max]="transform.max" [step]="transform.step" [value]="transforms[transform.property]" (change)="onChange($event,transform.property)"></mat-slider>
+                    <mat-form-field style="width: 30%;" > <input type="number" matInput [(ngModel)]="transforms[transform.property]" (input)="onSubmit()"></mat-form-field>
+                        </div>
+                        
+                    <mat-slide-toggle color="primary" *ngIf="transform.type == 'bool'" (change)="onChecked($event,transform.property)"></mat-slide-toggle> 
+                    </div> 
+                </div>
+                <div class="alternate-theme text-left" *ngIf="transform.inputs">
+                        <mat-label class="h6">{{transform.name}}</mat-label>
+                        <div class="row" *ngFor="let input of transform.inputs">
+                            <div class="col-md-3" style="display: flex; justify-content: flex-start; align-items: center;">
+                                <mat-label >{{input.name}}</mat-label>
+                            </div>
+                            <div class="col-md-9">
+                                <div *ngIf="input.type == 'number'" class="d-flex" style="align-items: center; justify-content: space-around;">
+                                <mat-slider color="primary" thumbLabel
+                            [tickInterval]="input.step" [min]="input.min" [max]="input.max" [step]="input.step" [value]="transforms[input.property]" (change)="onChange($event,input.property)"></mat-slider>
+                            <mat-form-field style="width: 30%;" > <input type="number" matInput [(ngModel)]="transforms[input.property]" (input)="onSubmit()"></mat-form-field>
+                            </div>
+                            <mat-slide-toggle color="primary" *ngIf="input.type == 'bool'" (change)="onChecked($event,input.property)"></mat-slide-toggle>
+        
+                            </div>     
+                        </div>
+                </div>
+              </div>
+              <!-- <div>
+                <div>
+                    <mat-label>TranslateX</mat-label>
+                </div>
+                <mat-slider min="0" max="100" step="3" [value]="transforms['translateX']" (change)="onChange($event,'translateX')"></mat-slider>
+            </div>
+            <div>
+                <div>
+                    <mat-label>TranslateY</mat-label>
+                </div>
+                <mat-slider min="0" max="100" step="3" [value]="transforms.translateY" (change)="onChange($event,'translateY')"></mat-slider>
+            </div>
+            <div>
+                <div>
+                    <mat-label>Rotate</mat-label>
+                </div>
+                <mat-slider min="0" max="360" step="3" [value]="transforms.rotate" (change)="onChange($event,'rotate')"></mat-slider>
+            </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Colorspace
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                
+                <div class="row">
+                    <div class="col-md-3" style="display: flex; justify-content: center; align-items: center;">
+                        <mat-label>Contrast</mat-label>
+                    </div>
+                    <div class="col-md-9">
+                        <mat-slider thumbLabel
+                    tickInterval="1" min="0" max="100" step="3" [value]="transforms.contrast" (change)="onChange($event,'contrast')"></mat-slider>
+                    </div>     
+                </div>
+               
+            
+                <div class="row">
+                    <div class="col-md-3" style="display: flex; justify-content: center; align-items: center;"> 
+                        <mat-label>Brightess</mat-label>
+                    </div>
+                    <div class="col-md-9">
+                    <mat-slider thumbLabel
+                    tickInterval="1" min="0" max="100" step="3" [value]="transforms.brightness" (change)="onChange($event,'brightness')"></mat-slider>
+                                            
+                </div>
+                </div>
+            -->
+              </mat-expansion-panel>
+          </mat-accordion>
+    </div>
+    <div class=" container d-flex justify-content-center button-container">
+        <button mat-flat-button color="accent" class="reset-button-container" (click)="reset()">Reset</button>
+        <button mat-flat-button color="primary" class="save-button-container" (click)="onSave()">Save</button>
+    </div>
+
+</div>

@@ -1,0 +1,107 @@
+.left-col{
+    margin-left: 4%;
+
+    .network-img {
+        margin: 4% 0;
+        width: 92%;
+        border: solid rgba($color: #ffffff, $alpha: 0.6) 1px;
+        border-radius: 10px;
+        justify-content: center;
+        display: flex;
+        object-fit: contain;
+    }
+    .content-container{
+        margin-bottom: 2% 0;
+        width: 90%;
+        display: flex;
+
+        .content-card {
+            color: white;
+
+            mat-card-title {
+                margin-bottom: 2vw;
+            }
+            mat-card {
+            background-color: #29313A;
+            color: white;
+            margin: 1vw 0;
+            width: 100%;
+            border-radius: 10px;
+            }
+
+            .hyper {
+                padding: 1vw;
+            }
+        }
+        .hyper-col {
+            flex-grow: 1;
+            margin-right: 1vw;
+        }
+        .loss-col{
+            flex-grow: 2;
+            margin-left: 1vw;
+        }
+    }
+}
+.right-col {
+    height: 100vh;
+    top: 0;
+    padding: 0;
+    max-width: unset;
+    flex: 0 0 29%;
+
+    .layer {
+        width: 100%;
+        height: 100%;
+
+        .layer-img {
+            width: 100%;
+            height: 35%;
+            background-color: #455060;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            object-fit: contain;
+        }
+        mat-card-title{
+            color: white;
+            margin: 1vw 3vw;
+            text-align: center;
+            font-size: 2vw;
+            padding: 1vw;
+        }
+        .layer-result {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30%;
+        }
+        .layer-info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .info{
+                background-color: #29313A;
+                color: white;
+                width: 80%;
+                margin: 1vw 0;
+                border-radius: 10px;
+            }
+        }
+    }
+    .button-container{
+        position: absolute;
+        top: 30%;
+        display: flex;
+        padding-left: 40%;
+
+.blue-arrow{
+    color:white; 
+    background-color:#0088FF; 
+    border-radius: 50%;
+    // margin-right: 15%;
+  }
+    }
+}

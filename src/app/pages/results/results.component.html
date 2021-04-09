@@ -1,0 +1,22 @@
+<nav mat-tab-nav-bar class="topbar">
+    <a mat-tab-link
+     *ngFor="let link of links"
+     routerLink="/pages/results/{{link.link}}"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive">
+    {{link.name}}
+  </a>
+  <div class="my-dropdown">
+    <mat-select  class="matOption" [(ngModel)]="currNetwork" (selectionChange)="save()" [compareWith]="networkComparator">
+      <mat-option *ngFor="let network of networks" [value]="network" >{{network.name}}</mat-option>
+    </mat-select>
+  </div>
+  <div class="my-dropdown" style="margin-left: 0.01%;">
+    <mat-select placeholder="Choose Result"  class="matOption" [(ngModel)]="currResult" (selectionChange)="get_result()">
+      <mat-option *ngFor="let result of results" [value]="result" >{{result}}</mat-option>
+    </mat-select>
+  </div>
+</nav>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>

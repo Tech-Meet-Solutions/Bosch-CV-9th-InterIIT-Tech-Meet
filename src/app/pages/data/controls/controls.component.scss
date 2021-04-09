@@ -1,0 +1,82 @@
+.example-action-buttons {
+    padding-bottom: 20px;
+  }
+  
+  .example-headers-align .mat-expansion-panel-header-title,
+  .example-headers-align .mat-expansion-panel-header-description {
+    flex-basis: 0;
+    color : white;
+  }
+  
+  .example-headers-align .mat-expansion-panel-header-description {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .example-headers-align .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+
+  .reset-button-container{
+      margin: 10px;
+      color: white;
+      background-color: #29313A;
+      border-radius: 20px;
+  }
+  .save-button-container{
+      margin: 10px;
+      color: white;
+      background-color: #0088FF;
+      border-radius: 20px;
+      flex-grow: 3;
+  }
+
+  .heading-container{
+      color: white;
+      font-size: 5vh;
+      padding: 2vh;
+  }
+
+  ::ng-deep .expansion-panel-header > .mat-expansion-indicator:after {
+    color: white;
+  }
+
+  .example-headers-align mat-expansion-panel-header {
+    border-radius: 16px;
+  }
+
+  .example-headers-align mat-expansion-panel{
+    border-radius: 16px;
+    background-color: #29313a;
+    overflow: hidden;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .example-headers-align mat-label{
+    color: white;
+  }
+
+  mat-form-field{
+    color: white
+  }
+
+::ng-deep .alternate-theme .mat-slide-toggle .mat-slide-toggle-bar {
+    background-color: #13181E;
+}
+
+$display_img: 325px;
+.display-image-edit{
+  width: 100%;
+  max-height: $display_img;
+  overflow: hidden;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  img{
+    object-fit: cover;
+    width: 100%;
+  }
+}

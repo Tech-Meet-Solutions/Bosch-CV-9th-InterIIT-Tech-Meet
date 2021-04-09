@@ -1,0 +1,25 @@
+<div class="dropdown">
+  <button #DropBtn class="dropbtn">
+      <div class="row">
+          <div class="col-9" style="font-size: 14px;">
+              {{label}}
+          </div>
+          <div class="col-3" style="padding-left: 0;padding-right: 32px;">
+              <img src ="assets/icons/downarrow.png">
+          </div>
+      </div>
+  </button>
+  <div #DropdownContent class="dropdown-content">
+    <ng-container *ngFor="let label of labels">
+      <a #LabelLink style="font-size: 14px;" class="label-link" (click)="setLabel(label)">{{label}}</a>
+    </ng-container>
+    <a #InputA id="input-a" class="d-flex justify-content-between align-items-center" *ngIf="newField">
+        <div >
+          <input #newlabel id="new-label-text" type="text" placeholder="Custom label">
+        </div>
+        <div (click)="addNewLabel(newlabel.value)">
+              Add
+        </div>
+    </a>
+  </div>
+</div>

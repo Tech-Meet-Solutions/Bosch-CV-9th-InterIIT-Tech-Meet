@@ -1,0 +1,84 @@
+.container {
+    color: white;
+    padding-top: 3vw;
+
+    .image-container {
+
+        .heading {
+            font-size: 1.5vw;
+        }
+        .carousel-container {
+            display: flex;
+            height: 15vw;
+            align-items: center;
+
+            .view-area {
+                // width: 80vw;
+                flex-grow: 1;
+                max-width: 90%;
+                margin: 0 1vw;
+
+                .carousel {
+                    overflow: auto;
+                    white-space: nowrap;
+                    -ms-overflow-style: none;  /* IE and Edge */
+                    scrollbar-width: none; 
+
+                    
+                .new-gallery-image{
+                    height: 12vw;
+                    border-radius: 20px;
+                    background-color: #29313A;   
+                    padding: 0;
+                    width: 15vw;
+                    display: inline-block;
+                    img{
+                        width: 100%;
+                        height: 80%;
+                        object-fit: cover;
+                    }
+                    .subtitle{
+                        color: #fff;
+                        font-size: 14px;
+                        padding-top: 10px;
+                        padding-left: 10px;
+                    }
+                }
+                }
+                .carousel::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+            .blue-arrow{
+                color:white; 
+                background-color:#0088FF; 
+                border-radius: 10%;
+                // padding: 5% 2%;
+            }
+        }
+    }
+    .text-container {
+        display: flex;
+
+        .suggestions-container {
+            background-color: #29313A;
+            padding: 2vw;
+            margin: 1vw;
+            border-radius: 10px;
+            width: 30vw;
+            min-height: 20vw;
+
+            .heading {
+                font-size: 1.5vw;
+            }
+        }
+    }
+    table {
+        background-color: #29313A;
+        width: 94%;
+        margin-left: 1vw;
+    }
+    ::ng-deep .mat-cell, .mat-header-cell {
+        color: white;
+    }
+}
