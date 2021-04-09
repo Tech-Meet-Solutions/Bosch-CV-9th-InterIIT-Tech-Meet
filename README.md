@@ -1,6 +1,6 @@
 # TrafficSignRecognition
 
-![Your Repository's Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Your_GitHub_Username&theme=blue-green)
+![Your Repository's Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=pranav2812&theme=blue-green)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
