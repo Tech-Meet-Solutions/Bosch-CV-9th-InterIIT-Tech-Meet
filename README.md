@@ -1,4 +1,4 @@
-# TrafficSignRecognition
+# Traffic Sign Recognition - Bosch
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-) <img src="https://img.shields.io/badge/Maintained-No-red.svg?style=flat" style="float: left;margin-right: 10px;"  hspace="20" alt="Not maintained"><img src="https://img.shields.io/github/license/pranav2812/9th-inter-iit-traffic-sign?style=flat" style="float: left;margin-right: 10px;" hspace="20" alt="Apache License v2.0
 ">
@@ -8,6 +8,14 @@
 
 ### The contingent won Bronze Medal in the Bosch Traffic Sign Recognition Problem Statement in Inter IIT Tech Meet 9.0.
 
+## View the presentation here:
+[PDF Presentation](./H1_BSC_9_Presentation_final.pdf)
+
+## View the website demo video here:
+[![9th InterIIT Bosch Traffic Sign recognition, IIT Bombay](thumb.png)](https://www.youtube.com/watch?v=0AiCw3MFePM "9th InterIIT Bosch Traffic Sign recognition, IIT Bombay")
+
+## The Team
+[All Contributors](team.png)]
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
@@ -73,12 +81,6 @@ Download the dataset from the official site [INI](https://benchmark.ini.rub.de/g
 Else, download the dataset from here: [Kaggle link](https://www.kaggle.com/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign) (already converted to .png)
 
 Place the downloaded dataset in `backend/Data/Train` folder
-
-## View the presentation here:
-[PDF Presentation](./H1_BSC_9_Presentation_final.pdf)
-
-## View the website demo video here:
-[![9th InterIIT Bosch Traffic Sign recognition, IIT Bombay](thumb.png)](https://www.youtube.com/watch?v=0AiCw3MFePM "9th InterIIT Bosch Traffic Sign recognition, IIT Bombay")
 
 ## Contributors ✨
 
