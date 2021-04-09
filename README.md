@@ -1,7 +1,6 @@
 # TrafficSignRecognition
 
-![Your Repository's Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=pranav2812&theme=blue-green)
-
+![Your Repository's Stats](https://contrib.rocks/image?repo=pranav2812/9th-inter-iit-traffic-sign)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
