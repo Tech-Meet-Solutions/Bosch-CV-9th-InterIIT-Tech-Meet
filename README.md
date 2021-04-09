@@ -1,6 +1,6 @@
 # TrafficSignRecognition
 
-<img src="https://img.shields.io/badge/Maintained-No-red.svg?style=flat" style="float: left;margin-right: 10px;" alt="Not maintained"><img src="https://img.shields.io/github/license/pranav2812/9th-inter-iit-traffic-sign?style=flat" style="float: left;margin-right: 10px;" alt="Apache License v2.0
+<img src="https://img.shields.io/badge/Maintained-No-red.svg?style=flat" style="float: left;margin-right: 10px;" width="200" alt="Not maintained"><img src="https://img.shields.io/github/license/pranav2812/9th-inter-iit-traffic-sign?style=flat" style="float: left;margin-right: 10px;" width="200" alt="Apache License v2.0
 ">
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
