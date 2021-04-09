@@ -16,6 +16,85 @@
         "content",
         "design"
       ]
+    },
+    {
+      "login": "gurnoor6",
+      "name": "Gurnoor Singh Khurana",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62883198?v=4",
+      "profile": "https://gurnoor6.github.io/homepage/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "jayeshs999",
+      "name": "jayeshs999",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55800453?v=4",
+      "profile": "https://github.com/jayeshs999",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "AnujAgrawal30",
+      "name": "AnujAgrawal30",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45514513?v=4",
+      "profile": "https://github.com/AnujAgrawal30",
+      "contributions": [
+        "code",
+        "mentoring"
+      ]
+    },
+    {
+      "login": "mitali72",
+      "name": "mitali72",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58500087?v=4",
+      "profile": "https://github.com/mitali72",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "omkarghugarkar007",
+      "name": "Omkar Ghugarkar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62425457?v=4",
+      "profile": "http://omkarghugarkar.me",
+      "contributions": [
+        "code",
+        "data"
+      ]
+    },
+    {
+      "login": "atharva-diwan",
+      "name": "atharva-diwan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64583671?v=4",
+      "profile": "https://github.com/atharva-diwan",
+      "contributions": [
+        "code",
+        "data"
+      ]
+    },
+    {
+      "login": "nilbarde",
+      "name": "Nihal Barde",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34839591?v=4",
+      "profile": "http://homepages.iitb.ac.in/~nihalbarde/",
+      "contributions": [
+        "code",
+        "mentoring"
+      ]
+    },
+    {
+      "login": "TheSmilingSky",
+      "name": "Gagan Jain",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42549409?v=4",
+      "profile": "https://thesmilingsky.github.io/",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
