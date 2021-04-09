@@ -1,6 +1,6 @@
 # TrafficSignRecognition
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <img src="https://img.shields.io/badge/Maintained-No-red.svg?style=flat" style="float: left;margin-right: 10px;"  hspace="20" alt="Not maintained"><img src="https://img.shields.io/github/license/pranav2812/9th-inter-iit-traffic-sign?style=flat" style="float: left;margin-right: 10px;" hspace="20" alt="Apache License v2.0
@@ -93,6 +93,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/mitali72"><img src="https://avatars.githubusercontent.com/u/58500087?v=4?s=100" width="100px;" alt=""/><br /><sub><b>mitali72</b></sub></a><br /><a href="https://github.com/pranav2812/9th-inter-iit-traffic-sign/commits?author=mitali72" title="Code">💻</a> <a href="https://github.com/pranav2812/9th-inter-iit-traffic-sign/commits?author=mitali72" title="Documentation">📖</a></td>
     <td align="center"><a href="http://omkarghugarkar.me"><img src="https://avatars.githubusercontent.com/u/62425457?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Omkar Ghugarkar</b></sub></a><br /><a href="https://github.com/pranav2812/9th-inter-iit-traffic-sign/commits?author=omkarghugarkar007" title="Code">💻</a> <a href="#data-omkarghugarkar007" title="Data">🔣</a></td>
     <td align="center"><a href="https://github.com/atharva-diwan"><img src="https://avatars.githubusercontent.com/u/64583671?v=4?s=100" width="100px;" alt=""/><br /><sub><b>atharva-diwan</b></sub></a><br /><a href="https://github.com/pranav2812/9th-inter-iit-traffic-sign/commits?author=atharva-diwan" title="Code">💻</a> <a href="#data-atharva-diwan" title="Data">🔣</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="http://homepages.iitb.ac.in/~nihalbarde/"><img src="https://avatars.githubusercontent.com/u/34839591?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nihal Barde</b></sub></a><br /><a href="https://github.com/pranav2812/9th-inter-iit-traffic-sign/commits?author=nilbarde" title="Code">💻</a> <a href="#mentoring-nilbarde" title="Mentoring">🧑‍🏫</a></td>
   </tr>
 </table>
 
