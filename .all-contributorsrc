@@ -82,6 +82,16 @@
         "code",
         "mentoring"
       ]
+    },
+    {
+      "login": "TheSmilingSky",
+      "name": "Gagan Jain",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42549409?v=4",
+      "profile": "https://thesmilingsky.github.io/",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
