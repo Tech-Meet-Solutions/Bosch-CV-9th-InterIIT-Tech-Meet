@@ -6,7 +6,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
-### The contingent won Bronze Medal in the Bosch Traffic Sign Recognition Problem Statement in Inter IIT Tech Meet 9.0.
+### The contingent won Bronze Medal :3rd_place_medal: in the Bosch Traffic Sign Recognition Problem Statement in Inter IIT Tech Meet 9.0.
 
 ## View the presentation here:
 [PDF Presentation](./H1_BSC_9_Presentation_final.pdf)
