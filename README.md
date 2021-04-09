@@ -1,6 +1,6 @@
 # TrafficSignRecognition
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <img src="https://img.shields.io/badge/Maintained-No-red.svg?style=flat" style="float: left;margin-right: 10px;"  hspace="20" alt="Not maintained"><img src="https://img.shields.io/github/license/pranav2812/9th-inter-iit-traffic-sign?style=flat" style="float: left;margin-right: 10px;" hspace="20" alt="Apache License v2.0
@@ -88,6 +88,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="http://homepages.iitb.ac.in/~pranav.deo/"><img src="https://avatars.githubusercontent.com/u/35232938?v=4?s=100" width="100px;" alt=""/><br /><sub><b>pro2812</b></sub></a><br /><a href="#projectManagement-pranav2812" title="Project Management">📆</a></td>
     <td align="center"><a href="https://gurnoor6.github.io/homepage/"><img src="https://avatars.githubusercontent.com/u/62883198?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Gurnoor Singh Khurana</b></sub></a><br /><a href="https://github.com/pranav2812/9th-inter-iit-traffic-sign/commits?author=gurnoor6" title="Code">💻</a> <a href="https://github.com/pranav2812/9th-inter-iit-traffic-sign/commits?author=gurnoor6" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/AnujAgrawal30"><img src="https://avatars.githubusercontent.com/u/45514513?v=4?s=100" width="100px;" alt=""/><br /><sub><b>AnujAgrawal30</b></sub></a><br /><a href="https://github.com/pranav2812/9th-inter-iit-traffic-sign/commits?author=AnujAgrawal30" title="Code">💻</a> <a href="#mentoring-AnujAgrawal30" title="Mentoring">🧑‍🏫</a></td>
   </tr>
 </table>
 
