@@ -87,7 +87,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://homepages.iitb.ac.in/~pranav.deo/"><img src="https://avatars.githubusercontent.com/u/35232938?v=4?s=100" width="100px;" alt=""/><br /><sub><b>pro2812</b></sub></a><br /><a href="#projectManagement-pranav2812" title="Project Management">📆</a></td>
-    <td align="center"><a href="https://gurnoor6.github.io/homepage/"><img src="https://avatars.githubusercontent.com/u/62883198?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Gurnoor Singh Khurana</b></sub></a><br /><a href="https://github.com/pranav2812/9th-inter-iit-traffic-sign/commits?author=gurnoor6" title="Code">💻</a></td>
+    <td align="center"><a href="https://gurnoor6.github.io/homepage/"><img src="https://avatars.githubusercontent.com/u/62883198?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Gurnoor Singh Khurana</b></sub></a><br /><a href="https://github.com/pranav2812/9th-inter-iit-traffic-sign/commits?author=gurnoor6" title="Code">💻</a> <a href="https://github.com/pranav2812/9th-inter-iit-traffic-sign/commits?author=gurnoor6" title="Documentation">📖</a></td>
   </tr>
 </table>
 
