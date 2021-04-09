@@ -15,7 +15,7 @@
 [![9th InterIIT Bosch Traffic Sign recognition, IIT Bombay](thumb.png)](https://www.youtube.com/watch?v=0AiCw3MFePM "9th InterIIT Bosch Traffic Sign recognition, IIT Bombay")
 
 ## The Team
-[![Team pic](team.jpg)]
+![Team pic](team.jpg)
 
 
 # Running the code:
