@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "pranav2812",
+      "name": "pro2812",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35232938?v=4",
+      "profile": "http://homepages.iitb.ac.in/~pranav.deo/",
+      "contributions": [
+        "projectManagement"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "9th-inter-iit-traffic-sign",
+  "projectOwner": "pranav2812",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
