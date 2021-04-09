@@ -1,0 +1,4 @@
+network1 = 'baseline'
+network2 = 'mobilenet'
+network3 = 'resnet'
+network4 = 'googlenet'

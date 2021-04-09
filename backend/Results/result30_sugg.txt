@@ -1,0 +1,4 @@
+Suggestive measures to reduce underfitting and improve its performance are as follows:
+If you can change the network then try adding more layers to increase its depth, number of features and complexity.
+If you can't change the network, but only the dataset, try applying suitable transforms to remove noise from the images, train for a larger number of epochs and perform hyperparamter tuning such as reducing the learning rate, reducing the number of layers freezed.
+Try adding more images to these (0, 2, 3, 6, 7, 8, 9, 11, 13, 14, 15, 19, 20, 23, 24, 25, 26, 28, 29, 30, 33, 34, 35, 37, 39, 40, 42, 45, 46, ) class(es) or oversample it using SMOTE

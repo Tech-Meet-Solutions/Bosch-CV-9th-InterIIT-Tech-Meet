@@ -1,0 +1,3 @@
+The model is performing poorly on the training dataset that is having bias and hence in this context it is underfitting.
+The model is having poor generalisation on the validation dataset that is having variance and hence in this context it is overfitting.
+The class: 0, 2, 3, 6, 7, 8, 9, 11, 13, 14, 15, 19, 20, 23, 24, 25, 26, 28, 29, 30, 33, 34, 35, 37, 39, 40, 42, 45, 46, seems skewed

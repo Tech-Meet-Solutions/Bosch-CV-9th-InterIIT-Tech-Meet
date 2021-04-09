@@ -1,0 +1,2 @@
+The model is performing poorly on the training dataset that is having bias and hence in this context it is underfitting.
+The validaiton and training losses are improving with epochs

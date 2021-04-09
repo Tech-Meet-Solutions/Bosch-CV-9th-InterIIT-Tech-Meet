@@ -1,0 +1,20 @@
+Optimizers:
+	1.Adam
+
+	2.Adagrad 
+
+	3.RMSprop
+
+	4.SGD
+
+Loss functions:
+	1.categorical_crossentropy
+	2.kullback_leibler_divergence
+
+regularizer_type:
+	1.L1 (default regularizer_value = 0.1)
+	2.L2 (default regularizer_value = 0.1)
+
+learning rate range = (1e-06, 1)
+
+			

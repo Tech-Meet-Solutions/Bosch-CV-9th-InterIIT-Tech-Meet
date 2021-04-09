@@ -1,0 +1,14 @@
+{
+    "baseline": {
+        "Result 1": {
+            "net_name": "Result 1",
+            "gradcam": ["pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png"],
+            "lime": ["pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png"],
+            "suggestions": "<h1>This is a heading</h1>",
+            "explanations": "<h1>This is a heading</h1>"
+        }
+    },
+    "mobilenet": {},
+    "resnet": {},
+    "googlenet": {}
+}

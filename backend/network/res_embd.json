@@ -1,0 +1,52 @@
+{
+    "baseline": {
+        "Result 1": {
+            "embd_imgs": ["pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png"],
+            "loss": 0,
+            "optimizer": 0,
+            "regularization_type": "reg_type",
+            "lr": "lr",
+            "decay_rate": "decay_rate",
+            "regularization_value": "regularization_value",
+            "epochs": "epochs",
+            "best_worst": {
+                "class1": ["pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png"],
+                "class1_name": "class1_name",
+                "class2": ["pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png"],
+                "class2_name": "class1_name",
+                "class3": ["pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png"],
+                "class3_name": "class1_name",
+                "class4": ["pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png"],
+                "class4_name": "class1_name",
+                "class5": ["pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png"],
+                "class5_name": "class1_name",
+                "class6": ["pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png"],
+                "class6_name": "class1_name",
+                "class7": ["pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png"],
+                "class7_name": "class1_name",
+                "class8": ["pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png"],
+                "class8_name": "class1_name",
+                "class9": ["pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png"],
+                "class9_name": "class1_name",
+                "class10": ["pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png", "pipeline/file.png"],
+                "class10_name": "class1_name"
+            },
+            "conf_dim": 10,
+            "conf_matrix": [
+                [1, 2, 3, 4, 5, 6, 7 ,8, 9, 0],
+                [1, 2, 3, 4, 5, 6, 7 ,8, 9, 0],
+                [1, 2, 3, 4, 5, 6, 7 ,8, 9, 0],
+                [1, 2, 3, 4, 5, 6, 7 ,8, 9, 0],
+                [1, 2, 3, 4, 5, 6, 7 ,8, 9, 0],
+                [1, 2, 3, 4, 5, 6, 7 ,8, 9, 0],
+                [1, 2, 3, 4, 5, 6, 7 ,8, 9, 0],
+                [1, 2, 3, 4, 5, 6, 7 ,8, 9, 0],
+                [1, 2, 3, 4, 5, 6, 7 ,8, 9, 0],
+                [1, 2, 3, 4, 5, 6, 7 ,8, 9, 0]
+            ]
+        }
+    },
+    "mobilenet": {},
+    "resnet": {},
+    "googlenet": {}
+}
