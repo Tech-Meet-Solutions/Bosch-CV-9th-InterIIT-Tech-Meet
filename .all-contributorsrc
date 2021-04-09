@@ -31,7 +31,7 @@
       "profile": "https://github.com/jayeshs999",
       "contributions": [
         "code"
-        ]
+      ]
     },
     {
       "login": "AnujAgrawal30",
@@ -41,6 +41,16 @@
       "contributions": [
         "code",
         "mentoring"
+      ]
+    },
+    {
+      "login": "mitali72",
+      "name": "mitali72",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58500087?v=4",
+      "profile": "https://github.com/mitali72",
+      "contributions": [
+        "code",
+        "doc"
       ]
     }
   ],
